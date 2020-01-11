@@ -1,0 +1,15 @@
+version: 2
+services:
+
+  torch-server:
+    image: torch-server
+    build: .
+    container_name: torch-server
+    volumes:
+      - torch-server-instance:/torch-server/Instance
+      - torch-server-logs:/torch-server/Logs
+      - torch-server-plugins:/torch-server/Plugins
+    ports:
+      - 6080:6080/tcp
+      - 27016:27016/udp
+    restart: unless-stopped
