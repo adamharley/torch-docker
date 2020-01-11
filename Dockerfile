@@ -1,7 +1,7 @@
 FROM debian:stable-slim
 LABEL maintainer="Adam Harley"
 
-ARG TORCH_BUILD
+ARG TORCH_BUILD=99
 
 VOLUME /torch-server/Instance
 VOLUME /torch-server/Logs
