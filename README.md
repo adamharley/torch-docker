@@ -14,7 +14,7 @@ Known Bugs
 ----------
 * Torch themes don't work
 * Keen's remote API doesn't work
-* Title bar doesn't work unless virtual desktop setting is run after first boot
+* Title bars don't render unless virtual desktop setting is set after first boot, run `winetricks vd=800x600` to fix it
 
 Build Notes
 -----------
