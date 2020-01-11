@@ -2,6 +2,8 @@ Building on the work of radu706 of the Torch Discord on getting the CLI version 
 
 In order to keep the image size down and simplify updates, this image contains *only* the Torch server and will download the Space Engineers dedicated server on first run. The SteamCMD update progress does not appear in the console but it *is* working.
 
+**Warning:** This image is experimental and initial testing shows performance to be a fraction of running under Windows. Don't use it for production use.
+
 Ports
 -----
 * TCP 5900: VNC (x11vnc)
