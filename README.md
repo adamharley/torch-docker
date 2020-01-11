@@ -30,3 +30,4 @@ Build Notes
 * Torch GUI requires Arial font to be installed or it'll fail fatally
 * Window management must be disabled for Wine to render a titlebar and a virtual desktop must then be used to stop the cursor disappearing on window focus
 * Winetricks setting verbs must be called individually or they only *appear* to work
+* Running as root is a necessary evil unless a decent solution can be found for setting ownership of Docker volumes
