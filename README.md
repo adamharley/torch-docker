@@ -1,3 +1,6 @@
+Torch for Docker (experimental)
+===============================
+
 Building on the work of radu706 of the Torch Discord on getting the CLI version of Torch running under Wine, this Docker image brings the GUI version of Torch to the web and VNC so you can have a truly headless server.
 
 In order to keep the image size down and simplify updates, this image contains *only* the Torch server and will download the Space Engineers dedicated server on first run. The SteamCMD update progress does not appear in the console but it *is* working.
