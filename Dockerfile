@@ -37,8 +37,7 @@ RUN wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/wine
 	chmod +x /usr/bin/winetricks
 
 # Setup Wine environment
-RUN winetricks autostart_winedbg=disabled && \
-	winetricks sound=disabled && \
+RUN winetricks sound=disabled && \
 	winetricks windowmanagermanaged=n
 
 # Install dependencies
