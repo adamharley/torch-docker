@@ -2,7 +2,7 @@ version: 2
 services:
 
   torch-server:
-    image: torch-server
+    image: adamharley/torch-server
     build: .
     container_name: torch-server
     volumes:
