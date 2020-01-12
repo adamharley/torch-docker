@@ -3,7 +3,6 @@ services:
 
   torch-server:
     image: adamharley/torch-server
-    build: .
     container_name: torch-server
     volumes:
       - torch-server-instance:/torch-server/Instance
