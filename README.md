@@ -5,7 +5,7 @@ Building on the work of radu706 of the Torch Discord getting the CLI version of 
 
 In order to keep the image size down and simplify updates, this image contains *only* the Torch server and will download the Space Engineers dedicated server on first run. The SteamCMD update progress does not appear in the console but it *is* working.
 
-If copying an existing world, make sure to change the path of `<LoadWorld>` in `SpaceEngineers-Dedicated.cfg` to `Z:\torch-server\Instance\Saves\`. If you want to create a world within the Torch GUI, disable the `-autostart` flag in supervisord.conf and restart.
+If copying an existing world, make sure to change the path of `<LoadWorld>` in `SpaceEngineers-Dedicated.cfg` to `Z:\torch-server\Instance\Saves\`. If you want to create a world within the Torch GUI, change `<Autostart>` to false in `Torch.cfg`, remove the `-autostart` flag in supervisord.conf and restart.
 
 **Warning:** This image is experimental and initial testing shows performance to be a fraction of running under Windows. Don't use it for production use.
 
