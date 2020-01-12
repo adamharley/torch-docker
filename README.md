@@ -27,7 +27,11 @@ Build Notes
 * Torch is built against (according to `packages.config`) .NET Framework 4.6.1 and Visual C++ 2013
 * However, booting with .NET Framework 4.6.1 on Wine results in fatal errors because of missing calls in a DLL, so you really need .NET Framework 4.6.2
 * Booting with .NET Framework 4.7 or higher results in rendering issues
+* Booting with Wine 5 RC1 under Debian Unstable results in Torch being unable to attach to the SE server
 * Torch GUI requires Arial font to be installed or it'll fail fatally
 * Window management must be disabled for Wine to render a titlebar and a virtual desktop must then be used to stop the cursor disappearing on window focus
 * Winetricks setting verbs must be called individually or they only *appear* to work
 * Running as root is a necessary evil unless a decent solution can be found for setting ownership of Docker volumes
+* Using `bash -c` is necessary to force the Torch CLI to appear under X11 instead of passing to the command line
+* Running Torch CLI from the command line will only pass all output if run by a user terminal, not Docker or supervisord
+* Setting supervisord's PID file to `/dev/null` will replace it with a regular file
