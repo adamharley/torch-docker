@@ -7,7 +7,7 @@ In order to keep the image size down and simplify updates, this image contains *
 
 If copying an existing world, make sure to change the path of `<LoadWorld>` in `SpaceEngineers-Dedicated.cfg` to `Z:\torch-server\Instance\Saves\`. If you want to create a world within the Torch GUI, change `<Autostart>` to false in `Torch.cfg`, remove the `-autostart` flag in supervisord.conf and restart.
 
-**Warning:** This image is experimental and initial testing shows performance to be a fraction of running under Windows. Don't use it for production use.
+**Warning:** This image is experimental. Performance appears to be optimal with 4 vCPUs made available, 8 actually causes performance to drop. Wine is weird.
 
 Ports
 -----
