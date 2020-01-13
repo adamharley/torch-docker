@@ -35,3 +35,4 @@ Build Notes
 * Using `bash -c` is necessary to force the Torch CLI to appear under X11 instead of passing to the command line
 * Running Torch CLI from the command line will only pass all output if run by a user terminal, not Docker or supervisord
 * Setting supervisord's PID file to `/dev/null` will replace it with a regular file
+* Wine's STDERR is a firehose of insignificant warning messages
